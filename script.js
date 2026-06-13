@@ -22,12 +22,11 @@ async function uploadCV() {
     try {
 
         const response = await fetch(
-            "https://ai-cv-updater.onrender.com/upload",     
-            {
-                method: "POST",
-                body: formData
-            }
-        );
+                "https://ai-cv-updater.onrender.com/upload",
+                 {
+                    method: "POST",
+                    body: formData
+                 })
 
         const data = await response.json();
 
