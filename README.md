@@ -3,6 +3,21 @@
 An AI-powered Resume Analyzer built with **FastAPI, HTML, CSS, and JavaScript** that helps users evaluate and improve their resumes through automated scoring, strengths analysis, and personalized suggestions.
 
 ---
+## 🌐 Live Demo
+
+Try the project here:
+
+**🔗 Live Website:** https://pilotek79.github.io/AI-CV-Updater/
+
+### What You Can Do
+
+* Upload a resume
+* Receive an ATS-style score
+* View strengths analysis
+* Get improvement suggestions
+* Experience a modern interactive UI
+
+No installation required.
 
 ## 📌 Overview
 
