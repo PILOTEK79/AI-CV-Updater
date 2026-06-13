@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI CV Updater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loader-content">
+            <h1 class="loader-title">AI CV Updater</h1>
+
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+
+            <p>Loading AI Engine...</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>AI CV Updater</h1>
+
+        <div class="upload-box">
+
+            <h3>Upload Your Resume</h3>
+
+            <input
+                type="file"
+                id="cvFile"
+                accept=".txt,.pdf,.doc,.docx"
+            >
+
+            <br><br>
+
+            <button onclick="uploadCV()">
+                Analyze Resume
+            </button>
+
+        </div>
+
+        <div id="result"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        window.addEventListener("load", () => {
+
+            setTimeout(() => {
+
+                const loader =
+                    document.getElementById("loading-screen");
+
+                if(loader){
+                    loader.style.opacity = "0";
+
+                    setTimeout(() => {
+                        loader.style.display = "none";
+                    }, 500);
+                }
+
+            }, 2500);
+
+        });
+    </script>
+
+</body>
+</html>
